@@ -1,0 +1,6 @@
+#plot2 (see plot1.R for data preparation steps)
+quartz()
+plot(newdata1$datetime,newdata1$Global_active_power,type='l',ann = FALSE)
+title(ylab = 'Global Active Power (kilowatts)')
+dev.copy(png,'~/R/plot2.png',width=480,height=480)
+dev.off()
